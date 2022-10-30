@@ -5,6 +5,7 @@ description: Learn how to build a minimal web API with ASP.NET Core.
 ms.author: riande
 ms.date: 10/23/2022
 monikerRange: '>= aspnetcore-6.0'
+ms.custom: engagement-fy23
 uid: tutorials/min-web-api
 ---
 
@@ -37,17 +38,17 @@ This tutorial creates the following API:
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE[](~/includes/net-prereqs-vs-7.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-vs-6.0.md)]
 
 ![VS22 installer workloads](min-web-api/_static/asp-net-web-dev.png)
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-[!INCLUDE[](~/includes/net-prereqs-vsc-7.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-vsc-6.0.md)]
 
 # [Visual Studio for Mac](#tab/visual-studio-mac)
 
-[!INCLUDE[](~/includes/net-prereqs-mac-7.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-mac-6.0.md)]
 
 ---
 
@@ -69,11 +70,6 @@ This tutorial creates the following API:
 
  ![Additional information](min-web-api/_static/add-info2.png)
 
-<!-- 
-![VS new project dialog](min-web-api/_static/5/vs.png)
--->
-
-<!-- Move this later since we don't need it now -->
 # [Visual Studio Code](#tab/visual-studio-code)
 
 * Open the [integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
@@ -139,8 +135,6 @@ The following highlighted code adds support for Swagger:
 
 # [Visual Studio](#tab/visual-studio)
 
-<!-- replace all of this with an include -->
-
 Press Ctrl+F5 to run without the debugger.
 
 [!INCLUDE[](~/includes/trustCertVS22.md)]
@@ -155,8 +149,7 @@ Press Ctrl+F5 to run the app. A browser window is opened. Append `/swagger` to t
 
 # [Visual Studio for Mac](#tab/visual-studio-mac)
 
-Select **Debug** > **Start Debugging** to launch the app. Visual Studio for Mac launches a browser and navigates to `https://localhost:<port>`, where `<port>` is a randomly chosen port number. 
-
+Select **Debug** > **Start Debugging** to launch the app. Visual Studio for Mac launches a browser and navigates to `https://localhost:<port>`, where `<port>` is a randomly chosen port number.
 
 ---
 
@@ -395,12 +388,6 @@ Update the to-do item that has Id = 1 and set its name to `"feed fish"`:
 }
 ```
 
-<!--
-The following image shows the Postman update:
- 
-`![Postman console showing 204 (No Content) response](min-web-api/_static/3/pmcput.png)`
--->
-
 ## Examine the DELETE endpoint
 
 The sample app implements a single DELETE endpoint using `MapDelete`:
@@ -507,17 +494,17 @@ This tutorial creates the following API:
 
 # [Visual Studio](#tab/visual-studio)
 
-[!INCLUDE[](~/includes/net-prereqs-vs-6.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-vs-7.0.md)]
 
 ![VS22 installer workloads](min-web-api/_static/asp-net-web-dev.png)
 
 # [Visual Studio Code](#tab/visual-studio-code)
 
-[!INCLUDE[](~/includes/net-prereqs-vsc-6.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-vsc-7.0.md)]
 
 # [Visual Studio for Mac](#tab/visual-studio-mac)
 
-[!INCLUDE[](~/includes/net-prereqs-mac-6.0.md)]
+[!INCLUDE[](~/includes/net-prereqs-mac-7.0.md)]
 
 ---
 
@@ -597,8 +584,6 @@ The preceding code:
 
 # [Visual Studio](#tab/visual-studio)
 
-<!-- replace all of this with an include -->
-
 Press Ctrl+F5 to run without the debugger.
 
 [!INCLUDE[](~/includes/trustCertVS22.md)]
@@ -644,6 +629,7 @@ NuGet packages must be added to support the database and diagnostics used in thi
 # [Visual Studio for Mac](#tab/visual-studio-mac)
 
 * In the Visual Studio for Mac 2022 toolbar, select **Project** > **Manage NuGet Packages...**.
+* Select **Include prereleases**
 * In the search box, enter **Microsoft.EntityFrameworkCore.InMemory**.
 * In the results window, check `Microsoft.EntityFrameworkCore.InMemory`.
 * Select **Add Package**.
@@ -799,12 +785,6 @@ Update the to-do item that has Id = 1 and set its name to `"feed fish"`:
   "isComplete": false
 }
 ```
-
-<!--
-The following image shows the Postman update:
- 
-`![Postman console showing 204 (No Content) response](min-web-api/_static/3/pmcput.png)`
--->
 
 ## Examine and test the DELETE endpoint
 
